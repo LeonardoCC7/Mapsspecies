@@ -74,7 +74,7 @@ bio_raw = raster::getData("worldclim",var="bio",res=5)
 #bio_raw = raster::stack(list.files(path = "/Users/vitorhpaiva/wc5",pattern=".bil$",full.names=T))
 plot(bio_raw[[1]])
 points(sp1, col = "blue")
-points(sp2, col = "red""
+points(sp2, col = "red")
 geo_area = raster::drawExtent() # Draw extent directly on the map, then run the next line
 bio_crop = raster::crop(bio_raw,geo_area)
 # Confirm that all locs are inside your study area
